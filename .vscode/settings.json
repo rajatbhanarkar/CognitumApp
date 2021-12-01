@@ -1,0 +1,6 @@
+{
+    "files.autoSave": "afterDelay",
+    "search.exclude": {
+        "**/node_modules": false
+    }
+}

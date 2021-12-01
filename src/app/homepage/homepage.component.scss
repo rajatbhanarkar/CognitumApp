@@ -1,0 +1,106 @@
+.homepage-container {
+}
+
+#welcome-card,
+#about-us-card {
+  border-radius: 0px;
+  padding: 30px !important;
+  margin-bottom: 30px;
+  box-shadow: none;
+}
+
+#welcome-card {
+  background: white;
+  height: 90vh;
+  border-radius: 0 !important;
+}
+
+#welcome-card-image > img,
+#about-us-card-image > img {
+  width: 100%;
+  background-color: #d3d7fe;
+  border-radius: 10px;
+}
+
+#welcome-card-content {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#welcome-card-content > .mat-card-title {
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 50px;
+  text-align: center;
+}
+
+#welcome-card-content > .mat-card-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#welcome-card-content > .mat-card-actions > button {
+  align-self: center;
+  width: 180px;
+}
+
+#about-us-card-content {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+#about-us-card-content > .mat-card-title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+#about-us-card-content > .mat-card-content {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+.projects-card {
+  border-radius: 10px;
+  padding: 30px !important;
+  box-shadow: none;
+}
+
+.projects-card > .mat-card-title {
+  font-weight: 600;
+}
+
+.projects-card > .mat-card-content {
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.projects-card > .mat-card-image {
+  width: 90%;
+  max-height: 210px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.projects-card > .mat-card-actions {
+  margin-top: 20px;
+}
+
+.projects-card > .mat-card-actions > .mat-raised-button {
+  width: 100%;
+}
+
+#mainimg {
+  height: 90vh;
+  width: 100vw;
+  object-fit: cover;
+}

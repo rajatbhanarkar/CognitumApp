@@ -1,0 +1,86 @@
+<div class="homepage-container">
+  <mat-card id="welcome-card">
+    <div fxLayout="row wrap center" fxLayoutGap="40px grid">
+      <div
+        id="welcome-card-image"
+        fxFlex="40%"
+        fxFlex.sm="100%"
+        fxFlex.xs="100%"
+      >
+        <img src="assets/cognitumwallpaper3.webp" />
+      </div>
+      <div
+        id="welcome-card-content"
+        fxFlex="60%"
+        fxFlex.sm="100%"
+        fxFlex.xs="100%"
+        fxFlexAlign="center"
+      >
+        <mat-card-title>Welcome to Cognitum 2.0!</mat-card-title>
+        <mat-card-subtitle>
+          Your one-place destination for all CMT Big Data projects
+        </mat-card-subtitle>
+        <mat-card-actions>
+          <button mat-raised-button color="accent">
+            Get Started &nbsp;<mat-icon>near_me</mat-icon>
+          </button>
+        </mat-card-actions>
+      </div>
+    </div>
+  </mat-card>
+
+  <mat-card id="about-us-card">
+    <div fxLayout="row wrap center" fxLayoutGap="40px grid">
+      <div
+        id="about-us-card-content"
+        fxFlex="60%"
+        fxFlex.sm="100%"
+        fxFlex.xs="100%"
+        fxFlexAlign="center"
+      >
+        <mat-card-title>About Us</mat-card-title>
+        <mat-card-content>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex eligendi
+          aperiam illum hic, ducimus aspernatur autem provident asperiores
+          officiis cupiditate amet omnis sed quam laudantium accusamus inventore
+          magni rem earum! <br /><br />
+          Rem numquam accusantium a aliquam, eos sit praesentium! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Impedit exercitationem ab
+          necessitatibus labore nisi ipsam eos dolor repellendus voluptatum.
+          Nesciunt.
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="accent">
+            Learn More &nbsp;<mat-icon>near_me</mat-icon>
+          </button>
+        </mat-card-actions>
+      </div>
+      <div
+        id="about-us-card-image"
+        fxFlex="40%"
+        fxFlex.sm="100%"
+        fxFlex.xs="100%"
+      >
+        <img src="assets/cognitumwallpaper2.webp" />
+      </div>
+    </div>
+  </mat-card>
+
+  <div fxLayout="row wrap" fxLayoutGap="20px grid">
+    <div
+      fxFlex="25%"
+      fxFlex.sm="33%"
+      fxFlex.xs="50%"
+      *ngFor="let feature of features"
+    >
+      <mat-card class="projects-card">
+        <mat-card-title>{{ feature.title }}</mat-card-title>
+        <mat-card-content>{{ feature.description }}</mat-card-content>
+        <img mat-card-image src="{{ feature.image }}" />
+        <mat-card-actions>
+          <button mat-raised-button color="accent">Explore</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>
